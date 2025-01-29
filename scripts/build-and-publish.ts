@@ -111,7 +111,7 @@ class GitHubClient {
 			},
 		});
 		if (!response.ok) {
-			throw new Error(`GitHub API request failed: ${response.statusText}`);
+			throw new Error(`GitHub API request failed: ${response.statusText}, ${await response.text()}`);
 		}
 		return response.json();
 	}
