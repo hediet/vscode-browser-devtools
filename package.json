@@ -87,6 +87,7 @@
 		"clean": "node -e \"require('fs-extra').removeSync('./build')\"",
 		"build": "yarn run clean && yarn run build-webpack && yarn run package-extension",
 		"build-ts": "tsc -p ./",
+		"lint": "echo \"No linting configured.\"",
 		"build-webpack": "webpack",
 		"dev-ts": "tsc -watch -p ./",
 		"get-types": "dts dev",
