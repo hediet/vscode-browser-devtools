@@ -1,6 +1,11 @@
 # Browser Dev Tools
 
-[Based on Edge DevTools](https://github.com/microsoft/vscode-edge-devtools).
+[Based on the Edge DevTools VS Code extension](https://github.com/microsoft/vscode-edge-devtools), but
+* with minimalistic UI
+* needs an edge/chrome/electron debug session that it connects to
+    * (no headless edge process)
+* auto-discovery of supported debug sessions
+* auto-reveal of source code css selectors in Dev Tools
 
 ## Features
 
