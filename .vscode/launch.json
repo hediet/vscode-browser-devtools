@@ -1,0 +1,22 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Extension",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"${workspaceFolder}/demo",
+				"--profile",
+				"empty",
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			],
+			"env": {
+				"DEBUG_EXTENSION": "1"
+			},
+			"outFiles": ["${workspaceFolder}/build/**/*.js"],
+			"preLaunchTask": "npm: watch"
+		}
+	]
+}
