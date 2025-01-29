@@ -137,6 +137,7 @@
 		"devtools-protocol": "^0.0.1406504",
 		"lit-html": "^3.2.0",
 		"puppeteer-core": "18.1.0",
+		"ts-node": "^10.9.2",
 		"utf-8-validate": "6.0.4",
 		"vscode-chrome-debug-core": "6.8.11",
 		"vscode-extension-telemetry": "0.4.1",
