@@ -127,7 +127,10 @@
 		"webpack-cli": "5.1.4"
 	},
 	"dependencies": {
+		"@actions/exec": "^1.1.1",
+		"@actions/github": "^6.0.0",
 		"@hediet/node-reload": "^0.10.0",
+		"@hediet/semver": "^0.2.2",
 		"@vscode/codicons": "0.0.36",
 		"bufferutil": "4.0.8",
 		"devtools-protocol": "^0.0.1406504",
