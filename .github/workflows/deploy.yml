@@ -21,7 +21,7 @@ jobs:
             - run: yarn run-script build-and-publish
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  VSCE_PAT: ${{ secrets.MARKETPLACE_TOKEN }}
+                  VSCE_PAT: ${{ secrets.VSCE_PAT }}
                   GITHUB_RUN_NUMBER: ${{ github.run_number }}
             - name: Upload Artifacts
               uses: actions/upload-artifact@v4
