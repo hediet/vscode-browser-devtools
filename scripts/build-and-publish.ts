@@ -68,16 +68,14 @@ async function buildAndPublish(releaseType: 'stable' | 'preRelease', version: Se
 
 	await writeJsonFile(packageJsonPath, packageJson);
 
-	if (false)
-		await exec("yarn", ["build"]);
-	if (false)
-		await exec("yarn", [
-			"vsce",
-			"publish",
-			"--pat",
-			process.env.VSCE_PAT!,
-			...(releaseType === 'preRelease' ? ['--pre-release'] : [])]
-		);
+	await exec("yarn", ["build"]);
+	await exec("yarn", [
+		"vsce",
+		"publish",
+		"--pat",
+		process.env.VSCE_PAT!,
+		...(releaseType === 'preRelease' ? ['--pre-release'] : [])]
+	);
 }
 
 
